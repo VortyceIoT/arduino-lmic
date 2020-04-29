@@ -892,7 +892,7 @@ static void initJoinLoop (void) {
     LMIC.adrTxPow = 20;
     ASSERT((LMIC.opmode & OP_NEXTCHNL)==0);
     LMIC.txend = os_getTime();
-    setDrJoin(DRCHG_SET, DR_SF7);
+    setDrJoin(DRCHG_SET, DR_SF9);
 }
 
 static ostime_t nextJoinState (void) {
